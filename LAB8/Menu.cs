@@ -8,15 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Collections;
+using System.Data.SqlClient;
+
 
 namespace LAB8
 {
     public partial class Menu : Form
     {
-        public Menu()
+        private string textUsername;
+         
+        public Menu(string textUsername)
         {
             InitializeComponent();
-        }
+            this.textUsername = textUsername;
+            FillCombobox();
+        } 
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
@@ -58,8 +64,37 @@ namespace LAB8
             
         }
 
+        public void FillCombobox()
+        {
+            string Str = "Data Source=35.240.239.99;database=lab8;UID=sqlserver;password=dbadminB1607007";
+            // Querry lấy tên các môn học, textUsername là get mã cán bộ từ ô username ở class Login.
+            string Query = "SELECT * FROM subject INNER JOIN course ON subject.id = course.subject_id WHERE course.teacher_id = '" + textUsername + "';";
+            SqlConnection Con = new SqlConnection(Str);
+            SqlCommand cmd = new SqlCommand(Query, Con);
+            SqlDataReader sqlDataReader;            
+
+            try
+            {
+                Con.Open();
+                sqlDataReader = cmd.ExecuteReader();
+                while (sqlDataReader.Read())
+                {               
+                    string sName = sqlDataReader["name"].ToString();
+                   
+                    comboBox1.Items.Add(sName);
+                    
+                }               
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            Con.Close();
+        }
+
         // Update DGView
-        public void update()
+        /*public void update()
         {
             // Add column
             DanhsachSV.ColumnCount = 6;
@@ -228,7 +263,7 @@ namespace LAB8
             updatebtn.UseColumnTextForButtonValue = true;
             DanhsachSV.Columns.Add(updatebtn);
 
-        }
+        }*/
 
         private void tabControl1_MouseClick(object sender, MouseEventArgs e)
         {
@@ -239,17 +274,43 @@ namespace LAB8
         {
             
         }
-
+        /*
         private void tabControl1_Selected(object sender, TabControlEventArgs e)
         {
             update();
         }
+        */      
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+            string Str = "Data Source=35.240.239.99;database=lab8;UID=sqlserver;password=dbadminB1607007";           
+            SqlConnection Con = new SqlConnection(Str);
+            // Querry lấy danh sách sinh viên với môn tương ứng.
+            SqlDataAdapter sqlData = new SqlDataAdapter("SELECT * FROM student INNER JOIN course ON student.class_id = course.class_id WHERE course.teacher_id = '" + textUsername + "';", Con);         
+            DataTable dataTable = new DataTable();
+            sqlData.Fill(dataTable);
+
+            DanhsachSV.DataSource = dataTable;
+            DataGridViewButtonColumn updatebtn = new DataGridViewButtonColumn();
+            updatebtn.HeaderText = "Cap nhat diem";
+            updatebtn.Name = "updateBtnName";
+            updatebtn.Text = "Thuc hien";
+            updatebtn.UseColumnTextForButtonValue = true;
+            DanhsachSV.Columns.Add(updatebtn);
+
+        }
 
         private void DanhsachSV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == 5)
+            if (DanhsachSV.Columns[e.ColumnIndex].Name == "updateBtnName")
             {
-                MessageBox.Show((e.RowIndex + 1).ToString() + " Row Clicked");
+                UpdatePoint updatePoint = new UpdatePoint();
+                updatePoint.Visible = true;
             }
         }
     }

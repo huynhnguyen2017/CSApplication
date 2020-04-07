@@ -15,11 +15,19 @@ namespace LAB8
         public Login()
         {
             InitializeComponent();
+            textPassword.PasswordChar = '*';
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu(textUsername.Text);
+            menu.Visible = true;
+            this.Hide();
         }
     }
 }

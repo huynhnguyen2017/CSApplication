@@ -20,3 +20,15 @@ C:\Users\nhhuy\Downloads\LAB8\LAB8\obj\Debug\LAB8.csproj.GenerateResource.cache
 C:\Users\nhhuy\Downloads\LAB8\LAB8\obj\Debug\LAB8.csproj.CoreCompileInputs.cache
 C:\Users\nhhuy\Downloads\LAB8\LAB8\obj\Debug\LAB8.exe
 C:\Users\nhhuy\Downloads\LAB8\LAB8\obj\Debug\LAB8.pdb
+D:\ASPdotNET\CSApplication-master\LAB8\bin\Debug\LAB8.exe.config
+D:\ASPdotNET\CSApplication-master\LAB8\bin\Debug\LAB8.exe
+D:\ASPdotNET\CSApplication-master\LAB8\bin\Debug\LAB8.pdb
+D:\ASPdotNET\CSApplication-master\LAB8\obj\Debug\LAB8.csprojAssemblyReference.cache
+D:\ASPdotNET\CSApplication-master\LAB8\obj\Debug\LAB8.Login.resources
+D:\ASPdotNET\CSApplication-master\LAB8\obj\Debug\LAB8.Menu.resources
+D:\ASPdotNET\CSApplication-master\LAB8\obj\Debug\LAB8.Properties.Resources.resources
+D:\ASPdotNET\CSApplication-master\LAB8\obj\Debug\LAB8.csproj.GenerateResource.cache
+D:\ASPdotNET\CSApplication-master\LAB8\obj\Debug\LAB8.csproj.CoreCompileInputs.cache
+D:\ASPdotNET\CSApplication-master\LAB8\obj\Debug\LAB8.exe
+D:\ASPdotNET\CSApplication-master\LAB8\obj\Debug\LAB8.pdb
+D:\ASPdotNET\CSApplication-master\LAB8\obj\Debug\LAB8.UpdatePoint.resources
