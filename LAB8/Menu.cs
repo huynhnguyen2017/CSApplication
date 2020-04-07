@@ -67,7 +67,7 @@ namespace LAB8
         public void FillCombobox()
         {
             string Str = "Data Source=35.240.239.99;database=lab8;UID=sqlserver;password=dbadminB1607007";
-            // Querry lấy tên các môn học, textUsername là get mã cán bộ từ ô username ở class Login.
+            // Querry lấy tên các môn học, textUsername là get mã cán bộ từ ô username ở class Login (coi lại câu querry).
             string Query = "SELECT * FROM subject INNER JOIN course ON subject.id = course.subject_id WHERE course.teacher_id = '" + textUsername + "';";
             SqlConnection Con = new SqlConnection(Str);
             SqlCommand cmd = new SqlCommand(Query, Con);
@@ -290,11 +290,12 @@ namespace LAB8
         {
             string Str = "Data Source=35.240.239.99;database=lab8;UID=sqlserver;password=dbadminB1607007";      
             SqlConnection Con = new SqlConnection(Str);
-            // Querry lấy danh sách sinh viên với môn tương ứng.
+            // Querry lấy danh sách sinh viên với môn tương ứng (coi lại câu querry cho ngon :D) textUsername là get giá trị từ Textbox textUsername bên Class Login để truy vấn.
             SqlDataAdapter sqlData = new SqlDataAdapter("SELECT * FROM student INNER JOIN course ON student.class_id = course.class_id WHERE course.teacher_id = '" + textUsername + "';", Con);         
             DataTable dataTable = new DataTable();
             sqlData.Fill(dataTable);
 
+            // chỗ này là mấy cái button để gọi nhập điểm
             DanhsachSV.DataSource = dataTable;
             DataGridViewButtonColumn updatebtn = new DataGridViewButtonColumn();
             updatebtn.HeaderText = "Cap nhat diem";
@@ -307,6 +308,7 @@ namespace LAB8
 
         private void DanhsachSV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            // chỗ này lấy data mỗi row từng comlumn để set nó vô cái chỗ update điểm
             if (DanhsachSV.Columns[e.ColumnIndex].Name == "updateBtnName")
             {
                 DataGridViewRow row = DanhsachSV.Rows[e.RowIndex];

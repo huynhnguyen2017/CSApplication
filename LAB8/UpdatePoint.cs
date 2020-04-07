@@ -26,6 +26,7 @@ namespace LAB8
             FillTextBox();
         }
 
+        // mấy chỗ fill giống như này là để set value vô.
         public void FillTextBox()
         {
             textBoxMSSV.Text = MSSV;
@@ -39,6 +40,7 @@ namespace LAB8
             this.Dispose();
         }
 
+        // Chỗ này là event click update và insert điểm
         private void buttonUpdatePoint_Click(object sender, EventArgs e)
         {
 
