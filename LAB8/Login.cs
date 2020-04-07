@@ -27,7 +27,7 @@ namespace LAB8
         {
             Menu menu = new Menu(textUsername.Text);
             menu.Visible = true;
-            this.Hide();
+            this.Visible = false;
         }
     }
 }

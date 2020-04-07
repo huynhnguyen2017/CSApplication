@@ -288,7 +288,7 @@ namespace LAB8
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            string Str = "Data Source=35.240.239.99;database=lab8;UID=sqlserver;password=dbadminB1607007";           
+            string Str = "Data Source=35.240.239.99;database=lab8;UID=sqlserver;password=dbadminB1607007";      
             SqlConnection Con = new SqlConnection(Str);
             // Querry lấy danh sách sinh viên với môn tương ứng.
             SqlDataAdapter sqlData = new SqlDataAdapter("SELECT * FROM student INNER JOIN course ON student.class_id = course.class_id WHERE course.teacher_id = '" + textUsername + "';", Con);         
@@ -309,9 +309,15 @@ namespace LAB8
         {
             if (DanhsachSV.Columns[e.ColumnIndex].Name == "updateBtnName")
             {
-                UpdatePoint updatePoint = new UpdatePoint();
+                DataGridViewRow row = DanhsachSV.Rows[e.RowIndex];
+                string rMSSV = row.Cells[0].Value.ToString();
+                string rName1 = row.Cells[1].Value.ToString();
+                string rName2 = row.Cells[2].Value.ToString();
+                string rCourse = row.Cells[3].Value.ToString();
+
+                UpdatePoint updatePoint = new UpdatePoint(rMSSV, rName1, rName2, rCourse);
                 updatePoint.Visible = true;
             }
         }
     }
-}
+} 

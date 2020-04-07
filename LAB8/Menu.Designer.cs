@@ -199,7 +199,7 @@
             this.DanhsachSV.Size = new System.Drawing.Size(739, 457);
             this.DanhsachSV.TabIndex = 0;
             this.DanhsachSV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DanhsachSV_CellContentClick);
-            this.DanhsachSV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DanhsachSV_CellContentClick);
+            //this.DanhsachSV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DanhsachSV_CellContentClick);
             // 
             // menuStrip1
             // 
