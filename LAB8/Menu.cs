@@ -247,9 +247,11 @@ namespace LAB8
 
         private void DanhsachSV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == 5)
+            if (e.ColumnIndex == 6)
             {
-                MessageBox.Show((e.RowIndex + 1).ToString() + " Row Clicked");
+                Form2 updatePointForm = new Form2();
+                updatePointForm.Show();
+                //MessageBox.Show((e.RowIndex + 1).ToString() + " Row Clicked");
             }
         }
     }

@@ -20,3 +20,4 @@ C:\Users\nhhuy\Downloads\LAB8\LAB8\obj\Debug\LAB8.csproj.GenerateResource.cache
 C:\Users\nhhuy\Downloads\LAB8\LAB8\obj\Debug\LAB8.csproj.CoreCompileInputs.cache
 C:\Users\nhhuy\Downloads\LAB8\LAB8\obj\Debug\LAB8.exe
 C:\Users\nhhuy\Downloads\LAB8\LAB8\obj\Debug\LAB8.pdb
+C:\Users\nhhuy\Downloads\LAB8\LAB8\obj\Debug\LAB8.Form2.resources

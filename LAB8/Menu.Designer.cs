@@ -37,23 +37,21 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.DanhsachSV = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.DanhsachSV = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DanhsachSV)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(2, 27);
             this.tabControl1.Name = "tabControl1";
@@ -158,15 +156,15 @@
             this.tabPage2.UseVisualStyleBackColor = true;
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
-            // tabPage3
+            // DanhsachSV
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 31);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(789, 498);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Điểm thi";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.DanhsachSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DanhsachSV.Cursor = System.Windows.Forms.Cursors.Default;
+            this.DanhsachSV.Location = new System.Drawing.Point(6, 52);
+            this.DanhsachSV.Name = "DanhsachSV";
+            this.DanhsachSV.Size = new System.Drawing.Size(777, 290);
+            this.DanhsachSV.TabIndex = 0;
+            this.DanhsachSV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DanhsachSV_CellContentClick);
             // 
             // menuStrip1
             // 
@@ -174,7 +172,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(703, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(824, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -193,22 +191,11 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
-            // DanhsachSV
-            // 
-            this.DanhsachSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DanhsachSV.Cursor = System.Windows.Forms.Cursors.Default;
-            this.DanhsachSV.Location = new System.Drawing.Point(6, 52);
-            this.DanhsachSV.Name = "DanhsachSV";
-            this.DanhsachSV.Size = new System.Drawing.Size(703, 290);
-            this.DanhsachSV.TabIndex = 0;
-            this.DanhsachSV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DanhsachSV_CellContentClick);
-            this.DanhsachSV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DanhsachSV_CellContentClick);
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(703, 562);
+            this.ClientSize = new System.Drawing.Size(824, 562);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -218,9 +205,9 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DanhsachSV)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DanhsachSV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,7 +218,6 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
