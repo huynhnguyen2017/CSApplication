@@ -76,7 +76,10 @@
             this.textUsername.Name = "textUsername";
             this.textUsername.Size = new System.Drawing.Size(144, 20);
             this.textUsername.TabIndex = 3;
+<<<<<<< HEAD
             this.textUsername.TextChanged += new System.EventHandler(this.textUsername_TextChanged);
+=======
+>>>>>>> master
             // 
             // textPassword
             // 
@@ -113,6 +116,7 @@
             // 
             // loginBtn
             // 
+<<<<<<< HEAD
             this.loginBtn.BackColor = System.Drawing.Color.Lime;
             this.loginBtn.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginBtn.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -123,6 +127,18 @@
             this.loginBtn.Text = "LOGIN";
             this.loginBtn.UseVisualStyleBackColor = false;
             this.loginBtn.Click += new System.EventHandler(this.button1_Click);
+=======
+            this.button1.BackColor = System.Drawing.Color.Lime;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button1.Location = new System.Drawing.Point(140, 172);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 33);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "LOGIN";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+>>>>>>> master
             // 
             // Login
             // 
@@ -145,6 +161,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button loginBtn;
+        //private System.Windows.Forms.Button button1;
         public System.Windows.Forms.TextBox textUsername;
     }
 }

@@ -67,7 +67,7 @@ namespace LAB8
         public void FillCombobox()
         {
             string Str = "Data Source=35.240.239.99;database=lab8;UID=sqlserver;password=dbadminB1607007";
-            // Querry lấy tên các môn học, textUsername là get mã cán bộ từ ô username ở class Login.
+            // Querry lấy tên các môn học, textUsername là get mã cán bộ từ ô username ở class Login (coi lại câu querry).
             string Query = "SELECT * FROM subject INNER JOIN course ON subject.id = course.subject_id WHERE course.teacher_id = '" + textUsername + "';";
             SqlConnection Con = new SqlConnection(Str);
             SqlCommand cmd = new SqlCommand(Query, Con);
@@ -92,6 +92,10 @@ namespace LAB8
 
             Con.Close();
         }
+
+        // Update DGView
+        //public void update()
+
 
         private void tabControl1_MouseClick(object sender, MouseEventArgs e)
         {
@@ -126,6 +130,7 @@ namespace LAB8
             DataTable dataTable = new DataTable();
             sqlData.Fill(dataTable);
 
+            // chỗ này là mấy cái button để gọi nhập điểm
             DanhsachSV.DataSource = dataTable;
             DataGridViewButtonColumn updatebtn = new DataGridViewButtonColumn();
             updatebtn.HeaderText = "Cap nhat diem";
@@ -141,8 +146,9 @@ namespace LAB8
             if (DanhsachSV.Columns[e.ColumnIndex].Name == "updateBtnName")
             {
                 UpdatePoint updatePoint = new UpdatePoint();
+            // chỗ này lấy data mỗi row từng comlumn để set nó vô cái chỗ update điểm
                 updatePoint.Visible = true;
             }
         }
     }
-}
+} 
