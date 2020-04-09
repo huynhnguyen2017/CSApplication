@@ -12,11 +12,6 @@ namespace LAB8
 {
     public partial class UpdatePoint : Form
     {
-<<<<<<< HEAD
-        public UpdatePoint()
-        {
-            InitializeComponent();
-=======
         private string MSSV;
         private string Name1;
         private String Name2;
@@ -49,7 +44,6 @@ namespace LAB8
         private void buttonUpdatePoint_Click(object sender, EventArgs e)
         {
 
->>>>>>> master
         }
     }
 }
