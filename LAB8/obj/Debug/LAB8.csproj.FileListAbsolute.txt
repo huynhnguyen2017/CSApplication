@@ -44,3 +44,15 @@ D:\Git\CSApplication\LAB8\obj\Debug\LAB8.csproj.GenerateResource.cache
 D:\Git\CSApplication\LAB8\obj\Debug\LAB8.csproj.CoreCompileInputs.cache
 D:\Git\CSApplication\LAB8\obj\Debug\LAB8.exe
 D:\Git\CSApplication\LAB8\obj\Debug\LAB8.pdb
+C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\bin\Debug\LAB8.exe.config
+C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\bin\Debug\LAB8.exe
+C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\bin\Debug\LAB8.pdb
+C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.csprojAssemblyReference.cache
+C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.Login.resources
+C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.Menu.resources
+C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.Properties.Resources.resources
+C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.UpdatePoint.resources
+C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.csproj.GenerateResource.cache
+C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.csproj.CoreCompileInputs.cache
+C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.exe
+C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.pdb
