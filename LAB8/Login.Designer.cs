@@ -35,7 +35,7 @@
             this.textPassword = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.loginBtn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,10 +76,6 @@
             this.textUsername.Name = "textUsername";
             this.textUsername.Size = new System.Drawing.Size(144, 20);
             this.textUsername.TabIndex = 3;
-<<<<<<< HEAD
-            this.textUsername.TextChanged += new System.EventHandler(this.textUsername_TextChanged);
-=======
->>>>>>> master
             // 
             // textPassword
             // 
@@ -91,7 +87,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.loginBtn);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.textPassword);
@@ -114,20 +110,8 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // loginBtn
+            // button1
             // 
-<<<<<<< HEAD
-            this.loginBtn.BackColor = System.Drawing.Color.Lime;
-            this.loginBtn.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginBtn.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.loginBtn.Location = new System.Drawing.Point(140, 172);
-            this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(100, 33);
-            this.loginBtn.TabIndex = 5;
-            this.loginBtn.Text = "LOGIN";
-            this.loginBtn.UseVisualStyleBackColor = false;
-            this.loginBtn.Click += new System.EventHandler(this.button1_Click);
-=======
             this.button1.BackColor = System.Drawing.Color.Lime;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -138,7 +122,6 @@
             this.button1.Text = "LOGIN";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
->>>>>>> master
             // 
             // Login
             // 
@@ -160,8 +143,7 @@
         private System.Windows.Forms.TextBox textPassword;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button loginBtn;
-        //private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button1;
         public System.Windows.Forms.TextBox textUsername;
     }
 }

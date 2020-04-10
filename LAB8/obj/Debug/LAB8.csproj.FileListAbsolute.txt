@@ -32,20 +32,6 @@ D:\ASPdotNET\CSApplication-master\LAB8\obj\Debug\LAB8.csproj.CoreCompileInputs.c
 D:\ASPdotNET\CSApplication-master\LAB8\obj\Debug\LAB8.exe
 D:\ASPdotNET\CSApplication-master\LAB8\obj\Debug\LAB8.pdb
 D:\ASPdotNET\CSApplication-master\LAB8\obj\Debug\LAB8.UpdatePoint.resources
-<<<<<<< HEAD
-C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\bin\Debug\LAB8.exe.config
-C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\bin\Debug\LAB8.exe
-C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\bin\Debug\LAB8.pdb
-C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.csprojAssemblyReference.cache
-C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.Login.resources
-C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.Menu.resources
-C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.Properties.Resources.resources
-C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.UpdatePoint.resources
-C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.csproj.GenerateResource.cache
-C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.csproj.CoreCompileInputs.cache
-C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.exe
-C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.pdb
-=======
 D:\Git\CSApplication\LAB8\bin\Debug\LAB8.exe.config
 D:\Git\CSApplication\LAB8\bin\Debug\LAB8.exe
 D:\Git\CSApplication\LAB8\bin\Debug\LAB8.pdb
@@ -58,9 +44,6 @@ D:\Git\CSApplication\LAB8\obj\Debug\LAB8.csproj.GenerateResource.cache
 D:\Git\CSApplication\LAB8\obj\Debug\LAB8.csproj.CoreCompileInputs.cache
 D:\Git\CSApplication\LAB8\obj\Debug\LAB8.exe
 D:\Git\CSApplication\LAB8\obj\Debug\LAB8.pdb
-<<<<<<< HEAD
->>>>>>> master
-=======
 C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\bin\Debug\LAB8.exe.config
 C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\bin\Debug\LAB8.exe
 C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\bin\Debug\LAB8.pdb
@@ -73,4 +56,3 @@ C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.csproj.Generat
 C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.csproj.CoreCompileInputs.cache
 C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.exe
 C:\Users\nhhuy\Downloads\DotNet\CSApplication\LAB8\obj\Debug\LAB8.pdb
->>>>>>> master

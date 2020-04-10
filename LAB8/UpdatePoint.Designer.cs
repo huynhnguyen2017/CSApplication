@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
-=======
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -43,20 +41,12 @@
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.textBoxMSSV = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
->>>>>>> master
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.label1.Location = new System.Drawing.Point(361, 123);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "TEST";
-=======
             this.label1.Location = new System.Drawing.Point(38, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(294, 24);
@@ -177,20 +167,11 @@
             this.textBoxMSSV.ReadOnly = true;
             this.textBoxMSSV.Size = new System.Drawing.Size(215, 29);
             this.textBoxMSSV.TabIndex = 1;
->>>>>>> master
             // 
             // UpdatePoint
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Name = "UpdatePoint";
-            this.Text = "UpdatePoint";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-=======
             this.ClientSize = new System.Drawing.Size(400, 317);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -200,15 +181,12 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
->>>>>>> master
 
         }
 
         #endregion
 
         private System.Windows.Forms.Label label1;
-<<<<<<< HEAD
-=======
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -220,6 +198,5 @@
         private System.Windows.Forms.TextBox textBoxCourse;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.TextBox textBoxMSSV;
->>>>>>> master
     }
 }
