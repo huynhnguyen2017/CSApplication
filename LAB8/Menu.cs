@@ -96,8 +96,22 @@ namespace LAB8
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            string sqlQuery = "SELECT * FROM student INNER JOIN course ON student.class_id = course.class_id WHERE course.teacher_id = '" + textUsername + "'";
-            DanhsachSV.DataSource = Database.Instance.LoadData(sqlQuery);
+            // Clear all data and refresh.
+            this.DanhsachSV.DataSource = null;
+            this.DanhsachSV.Rows.Clear();
+            this.DanhsachSV.Columns.Clear();
+            this.DanhsachSV.Refresh();
+
+
+            string Str = "Data Source=35.240.239.99;database=lab8;UID=sqlserver;password=dbadminB1607007";      
+            SqlConnection Con = new SqlConnection(Str);
+            // Querry lấy danh sách sinh viên với môn tương ứng (coi lại câu querry cho ngon :D) textUsername là get giá trị từ Textbox textUsername bên Class Login để truy vấn.
+            SqlDataAdapter sqlData = new SqlDataAdapter("SELECT * FROM student INNER JOIN course ON student.class_id = course.class_id WHERE course.teacher_id = '" + textUsername + "';", Con);         
+            DataTable dataTable = new DataTable();
+            sqlData.Fill(dataTable);
+
+            // chỗ này là mấy cái button để gọi nhập điểm
+            DanhsachSV.DataSource = dataTable;
             DataGridViewButtonColumn updatebtn = new DataGridViewButtonColumn();
             updatebtn.HeaderText = "Cap nhat diem";
             updatebtn.Name = "updateBtnName";
@@ -116,10 +130,8 @@ namespace LAB8
                 string rMSSV = row.Cells[0].Value.ToString();
                 string rName1 = row.Cells[1].Value.ToString();
                 string rName2 = row.Cells[2].Value.ToString();
-                string rCourse = row.Cells[3].Value.ToString();
-                //SqlDataAdapter sqlData = new SqlDataAdapter("SELECT * FROM point INNER JOIN course ON student.class_id = course.class_id WHERE course.teacher_id = '" + textUsername + "';", this.Con);
-                //DataTable dataTable = new DataTable();
-                //sqlData.Fill(dataTable);
+                string rCourse = row.Cells[4].Value.ToString();
+
                 UpdatePoint updatePoint = new UpdatePoint(rMSSV, rName1, rName2, rCourse);
                 updatePoint.Visible = true;
             }
