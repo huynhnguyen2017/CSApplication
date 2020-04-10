@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-Database",
+      "appliesTo": "LAB8/Database.cs",
+      "type": "launch"
+    }
+  ]
+}

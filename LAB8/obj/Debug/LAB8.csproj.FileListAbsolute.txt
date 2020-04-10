@@ -44,3 +44,15 @@ D:\Git\CSApplication\LAB8\obj\Debug\LAB8.csproj.GenerateResource.cache
 D:\Git\CSApplication\LAB8\obj\Debug\LAB8.csproj.CoreCompileInputs.cache
 D:\Git\CSApplication\LAB8\obj\Debug\LAB8.exe
 D:\Git\CSApplication\LAB8\obj\Debug\LAB8.pdb
+E:\Workspace\dotnet\CSApplication\LAB8\obj\Debug\LAB8.exe
+E:\Workspace\dotnet\CSApplication\LAB8\obj\Debug\LAB8.pdb
+E:\Workspace\dotnet\CSApplication\LAB8\bin\Debug\LAB8.exe.config
+E:\Workspace\dotnet\CSApplication\LAB8\bin\Debug\LAB8.exe
+E:\Workspace\dotnet\CSApplication\LAB8\bin\Debug\LAB8.pdb
+E:\Workspace\dotnet\CSApplication\LAB8\obj\Debug\LAB8.csprojAssemblyReference.cache
+E:\Workspace\dotnet\CSApplication\LAB8\obj\Debug\LAB8.Login.resources
+E:\Workspace\dotnet\CSApplication\LAB8\obj\Debug\LAB8.Menu.resources
+E:\Workspace\dotnet\CSApplication\LAB8\obj\Debug\LAB8.Properties.Resources.resources
+E:\Workspace\dotnet\CSApplication\LAB8\obj\Debug\LAB8.UpdatePoint.resources
+E:\Workspace\dotnet\CSApplication\LAB8\obj\Debug\LAB8.csproj.GenerateResource.cache
+E:\Workspace\dotnet\CSApplication\LAB8\obj\Debug\LAB8.csproj.CoreCompileInputs.cache

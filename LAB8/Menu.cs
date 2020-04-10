@@ -1,14 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Collections;
-using System.Data.SqlClient;
 
 
 namespace LAB8
@@ -66,31 +58,20 @@ namespace LAB8
 
         public void FillCombobox()
         {
-            string Str = "Data Source=35.240.239.99;database=lab8;UID=sqlserver;password=dbadminB1607007";
-            // Querry lấy tên các môn học, textUsername là get mã cán bộ từ ô username ở class Login (coi lại câu querry).
-            string Query = "SELECT * FROM subject INNER JOIN course ON subject.id = course.subject_id WHERE course.teacher_id = '" + textUsername + "';";
-            SqlConnection Con = new SqlConnection(Str);
-            SqlCommand cmd = new SqlCommand(Query, Con);
-            SqlDataReader sqlDataReader;            
+            string sqlQuery = "SELECT * FROM subject INNER JOIN course ON subject.id = course.subject_id WHERE course.teacher_id = '" + textUsername + "';";
+            List<string> data = Database.Instance.ReadData(sqlQuery);
 
             try
             {
-                Con.Open();
-                sqlDataReader = cmd.ExecuteReader();
-                while (sqlDataReader.Read())
-                {               
-                    string sName = sqlDataReader["name"].ToString();
-                   
+                foreach (var sName in data)
+                {
                     comboBox1.Items.Add(sName);
-                    
-                }               
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
-            Con.Close();
         }
 
         // Update DGView
@@ -288,22 +269,15 @@ namespace LAB8
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            string Str = "Data Source=35.240.239.99;database=lab8;UID=sqlserver;password=dbadminB1607007";      
-            SqlConnection Con = new SqlConnection(Str);
-            // Querry lấy danh sách sinh viên với môn tương ứng (coi lại câu querry cho ngon :D) textUsername là get giá trị từ Textbox textUsername bên Class Login để truy vấn.
-            SqlDataAdapter sqlData = new SqlDataAdapter("SELECT * FROM student INNER JOIN course ON student.class_id = course.class_id WHERE course.teacher_id = '" + textUsername + "';", Con);         
-            DataTable dataTable = new DataTable();
-            sqlData.Fill(dataTable);
+            string sqlQuery = "SELECT * FROM student INNER JOIN course ON student.class_id = course.class_id WHERE course.teacher_id = '" + textUsername + "'";
+            DanhsachSV.DataSource = Database.Instance.LoadData(sqlQuery);
 
-            // chỗ này là mấy cái button để gọi nhập điểm
-            DanhsachSV.DataSource = dataTable;
             DataGridViewButtonColumn updatebtn = new DataGridViewButtonColumn();
             updatebtn.HeaderText = "Cap nhat diem";
             updatebtn.Name = "updateBtnName";
             updatebtn.Text = "Thuc hien";
             updatebtn.UseColumnTextForButtonValue = true;
             DanhsachSV.Columns.Add(updatebtn);
-
         }
 
         private void DanhsachSV_CellContentClick(object sender, DataGridViewCellEventArgs e)
