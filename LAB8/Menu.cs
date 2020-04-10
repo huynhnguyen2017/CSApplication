@@ -288,6 +288,13 @@ namespace LAB8
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
+            // Clear all data and refresh.
+            this.DanhsachSV.DataSource = null;
+            this.DanhsachSV.Rows.Clear();
+            this.DanhsachSV.Columns.Clear();
+            this.DanhsachSV.Refresh();
+
+
             string Str = "Data Source=35.240.239.99;database=lab8;UID=sqlserver;password=dbadminB1607007";      
             SqlConnection Con = new SqlConnection(Str);
             // Querry lấy danh sách sinh viên với môn tương ứng (coi lại câu querry cho ngon :D) textUsername là get giá trị từ Textbox textUsername bên Class Login để truy vấn.
@@ -315,7 +322,7 @@ namespace LAB8
                 string rMSSV = row.Cells[0].Value.ToString();
                 string rName1 = row.Cells[1].Value.ToString();
                 string rName2 = row.Cells[2].Value.ToString();
-                string rCourse = row.Cells[3].Value.ToString();
+                string rCourse = row.Cells[4].Value.ToString();
 
                 UpdatePoint updatePoint = new UpdatePoint(rMSSV, rName1, rName2, rCourse);
                 updatePoint.Visible = true;
